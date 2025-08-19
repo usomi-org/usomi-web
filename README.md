@@ -1,2 +1,3 @@
-# usomi-web
-Official usomi website
+### USOMI
+
+The official usomi website
