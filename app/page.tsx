@@ -39,6 +39,7 @@ export default function HomePage() {
       </section>
 
       {/* Initiatives Section */}
+
       <section id="our-work">
         <h2 className="text-3xl font-semibold mb-8">Our Initiatives</h2>
         <div className="grid md:grid-cols-3 gap-6">
