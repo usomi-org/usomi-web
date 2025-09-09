@@ -12,6 +12,7 @@ const ImageComponent = ({imagePath, width, height, alt = 'Descriptive Image', cl
     return (
         <div className="mt-8">
             <Image
+                priority={true}
                 src={imagePath}
                 alt={alt}
                 width={width}
