@@ -21,3 +21,11 @@ export const AboutUsomi: string = `USOMI Limited is a technical services provisi
   markets and production maximization knowledge and information. Through our mobile and web platforms, we help farmers 
   purchase authentic high-quality inputs, provide a mechanism for data-driven bench marking while also ensuring 
   that farmers can aggregate their produce and sell directly to high value domestic and international markets. We transform lives.`
+
+
+
+export const initiatives = [
+    { title: "UsomiRubi", img: "/usomi_18.jpg", desc: "Making markets work for farmers.", link: "/rubi" },
+    { title: "UsomiLulu", img: "/usomi_19.jpg", desc: "Making data work for farmers.", link: "/lulu" },
+    { title: "UsomiGenomics", img: "/usomi_17.jpg", desc: "Making genetics work for farmers.", link: "/genomics" },
+];
