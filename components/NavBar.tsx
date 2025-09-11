@@ -13,15 +13,15 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed w-full z-20 mt-2 border-t-1 border-b-1 border-green-500 transition-all ${
+            className={`fixed w-full z-20 mt-0 transition-all ${
                 scrolled
                     ? "backdrop-blur-md shadow-md"
                     : "bg-green-50"
             }`}
         >
-            <nav className="bg-white shadow px-6 py-4 flex justify-between items-center">
-                <h2 className="text-green-800 font-bold text-xl">Usomi</h2>
-                <ul className="flex space-x-8 text-green-700 font-medium">
+            <nav className="bg-white shadow px-2 py-4 flex justify-between">
+                <h2 className="text-green-800 font-bold text-xl md:text-2xl">Usomi</h2>
+                <ul className="flex md:space-x-6 text-1xl space-x-2 py-1 text-green-700 font-bold">
                     <li>
                         <Link href="#about">About</Link>
                     </li>
@@ -44,7 +44,7 @@ export default function Navbar() {
                         </div>
                     </li>
                     <li>
-                        <Link href="#contact">Contact</Link>
+                        <Link href="#contact">Contact Us</Link>
                     </li>
                 </ul>
             </nav>
