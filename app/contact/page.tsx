@@ -1,4 +1,1 @@
-
-export default function ContactComponent() {
-
-}
+export default function ContactComponent() {}
