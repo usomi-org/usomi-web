@@ -25,7 +25,7 @@ export const AboutUsomi: string = `USOMI Limited is a technical services provisi
 
 
 export const initiatives = [
-    { title: "UsomiRubi", img: "/usomi_18.jpg", desc: "Making markets work for farmers.", link: "/rubi" },
-    { title: "UsomiLulu", img: "/usomi_19.jpg", desc: "Making data work for farmers.", link: "/lulu" },
-    { title: "UsomiGenomics", img: "/usomi_17.jpg", desc: "Making genetics work for farmers.", link: "/genomics" },
+    { title: "UsomiRubi", img: "/usomi_11.jpg", desc: "Making markets work for farmers.", link: "/rubi" },
+    { title: "UsomiLulu", img: "/usomi_10.jpg", desc: "Making data work for farmers.", link: "/lulu" },
+    { title: "UsomiGenomics", img: "/usomi_15.jpg", desc: "Making genetics work for farmers.", link: "/genomics" },
 ];
