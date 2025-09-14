@@ -32,3 +32,7 @@ body {
 .text-green-usomi {
   color: #8BC34A
 }
+
+html {
+    scroll-behavior: smooth;
+}

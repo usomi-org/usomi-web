@@ -1,103 +1,92 @@
-// app/page.tsx
-import Image from "next/image";
+"use client";
+
+// import { RightSide } from "@/components/RightSide";
+// import { LeftSide } from "@/components/LeftSide";
+import { RightSide1 } from "@/components/RightSide";
+import { LeftSide1 } from "@/components/LeftSide";
+import Initiatives from "@/components/Initiatives";
+import About from "@/components/About";
+import ContactSection from "@/components/ContactSection";
+// import {Poppins, Lato, JetBrains_Mono} from "next/font/google";
+// const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+// const lato = Lato({ subsets: ["latin"], weight: ["400"] });
+// const jetbrains = JetBrains_Mono({subsets: ["latin"],variable: "--font-jetbrains",});
+// relative  flex h-screen lg:h-screen overflow-hidden lg:flex-row
+// export default function HomePage() {
+//     return (
+//         <div className="flex flex-col">
+//             {/*<section className="relative md:h-screen h-screen lg:flex-row lg:w-1/2 ">*/}
+//             {/*    /!*<div className="flex flex-col lg:flex-row">*!/*/}
+//             {/*        <LeftSide1/>*/}
+//             {/*        <RightSide1/>*/}
+//             {/*    /!*</div>*!/*/}
+//             {/*</section>*/}
+//             <section className="flex flex-col lg:flex-row h-screen">
+//                 <div className="lg:w-1/2">
+//                     <LeftSide1 />
+//                 </div>
+//                 <div className="lg:w-1/2 mt-6 lg:mt-0">
+//                     <RightSide1 />
+//                 </div>
+//             </section>
+//             {/* Initiatives */}
+//             <section className="h-screen">
+//                 <Initiatives/>
+//             </section>
+//
+//             {/* About */}
+//             {/*<section className="h-screen">*/}
+//                 <About/>
+//             {/*</section>*/}
+//             {/* Contact */}
+//             <ContactSection/>
+//         </div>
+//     );
+// }
+// export default function HomePage() {
+//   return (
+//     <div className="flex flex-col">
+//       {/* Hero Section - Fixed for mobile/desktop responsiveness */}
+//       <section className="relative flex flex-col lg:flex-row min-h-screen lg:h-screen overflow-hidden">
+//         <LeftSide1 />
+//         <RightSide1 />
+//       </section>
+//
+//       {/* Initiatives */}
+//       <Initiatives />
+//       {/* About */}
+//       <About />
+//       {/* Contact */}
+//       <ContactSection />
+//     </div>
+//   );
+// }
+
 export default function HomePage() {
-  return (
-    <div className="space-y-24">
+    return (
+        <div className="flex flex-col">
+            {/* Hero Section */}
+            <section className="flex flex-col lg:flex-row h-auto lg:h-screen">
+                {/* Left Side: Always Visible */}
+                <div className="lg:w-1/2 flex">
+                    <LeftSide1 />
+                </div>
 
-      {/* Hero Section */}
-      <section className="flex flex-col items-center text-center space-y-5">
-        <h1 className="text-4xl md:text-5xl font-bold">
-			Usomi - Empowering famers
-        </h1>
-        <p className="max-w-xl text-black">
-          Empowering farmers with data, research and technology to transform agriculture.
-        </p>
-        <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-xl">
-          Learn More
-        </button>
+                {/* Right Side: Hidden on Mobile */}
+                <div className="hidden lg:flex lg:w-1/2">
+                    <RightSide1 />
+                </div>
+            </section>
 
-        {/* small placeholder image */}
-        <div className="mt-8">
-          <Image
-            src="/aggregation-center.jpg"
-            alt="Agriculture Image"
-            width={800}
-            height={350}
-            className="rounded-2xl object-cover"
-          />
+            {/* Initiatives Section */}
+            <Initiatives />
+
+            {/* About Section */}
+            <About />
+
+            {/* Contact Section */}
+            <ContactSection />
         </div>
-      </section>
-
-      {/* About Section */}
-      <section>
-        <h2 className="text-3xl font-semibold mb-3">About Us</h2>
-        <p className="max-w-2xl text-gray-600">
-          Usomi aims to bridge the gap between agricultural research and everyday
-          farming practice. We design data-driven solutions that improve the
-          livelihoods of farmers across the region.
-        </p>
-      </section>
-
-      {/* Initiatives Section */}
-      <section id="our-work">
-        <h2 className="text-3xl font-semibold mb-8">Our Initiatives</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-
-          {/* Rubi */}
-          <div className="border p-6 rounded-2xl shadow-sm">
-            <h3 className="font-bold text-xl mb-2">UsomiRubi</h3>
-            <Image
-              src="/data-collection_1.jpg"
-              alt="UsomiRubi"
-              width={300}
-              height={200}
-              className="rounded-lg object-cover mb-3"
-            />
-            <p className="text-gray-600 text-sm">
-              Making markets work for farmers.
-            </p>
-          </div>
-
-          {/* Lulu */}
-          <div className="border p-6 rounded-2xl shadow-sm">
-            <h3 className="font-bold text-xl mb-2">UsomiLulu</h3>
-            <Image
-              src="/kuku-nyumbani.jpg"
-              alt="UsomiLulu"
-              width={300}
-              height={200}
-              className="rounded-lg object-cover mb-3"
-            />
-            <p className="text-gray-600 text-sm">
-              Making data work for farmers.
-            </p>
-          </div>
-
-          {/* Genomics */}
-          <div className="border p-6 rounded-2xl shadow-sm">
-            <h3 className="font-bold text-xl mb-2">UsomiGenomics</h3>
-            <Image
-              src="/aggregation-center.jpg"
-              alt="UsomiGenomics"
-              width={300}
-              height={200}
-              className="rounded-lg object-cover mb-3"
-            />
-            <p className="text-gray-600 text-sm">
-              Making genetics work for farmers.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Contact placeholder */}
-      <section id="contact">
-        <h2 className="text-3xl font-semibold mb-3">Contact Us</h2>
-        <p className="text-gray-600 max-w-md">
-          You can reach us via email at info@usomi.com or visit our offices to learn more.
-        </p>
-      </section>
-    </div>
-  );
+    );
 }
+

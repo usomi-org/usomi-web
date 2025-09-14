@@ -1,15 +1,17 @@
 {
-  "name": "my-app",
+  "name": "usomi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky && husky install"
   },
   "dependencies": {
-    "next": "15.4.6",
+    "@radix-ui/react-navigation-menu": "^1.2.14",
+    "next": "15.5.2",
     "pnpm": "^10.14.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -22,7 +24,13 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
+    "husky": "^9.1.7",
+    "prettier": "3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
