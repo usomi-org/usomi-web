@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, {useCallback, useEffect, useRef, useState} from "react";
 
 type Props = {
     open?: boolean; // controlled open
@@ -54,10 +54,10 @@ export default function MessagePopup({
     }, [isOpen, autoCloseMs]);
 
     // close handler
-    const handleClose = () => {
+    const handleClose = useCallback(() => {
         setIsOpen(false);
         if (onClose) onClose();
-    };
+    },[]);
 
     // close on outside click and Esc
     useEffect(() => {

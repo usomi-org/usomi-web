@@ -115,7 +115,7 @@ export default function Subscribe({ onSubscribeAction, initialTheme = "green" }:
                         {/* status */}
                         <div className="mt-3 min-h-[1.25rem]">
                             {status === "success" && (
-                                <div className="text-sm text-green-800">Thanks — you're subscribed!</div>
+                                <div className="text-sm text-green-800">Thanks — you&quot;re subscribed!</div>
                             )}
                             {status === "error" && (
                                 <div id="subscribe-error" className="text-sm text-red-600">

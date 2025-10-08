@@ -210,7 +210,7 @@ const SECTIONS: Section[] = [
         content: (
             <>
                 <p className="mb-2">
-                    Sellers are encouraged to leave feedback after transactions. Contact information shared is taken from users’
+                    Sellers are encouraged to leave feedback after transactions. Contact information shared is taken from users&apos;
                     registration data; do not use another user's details for any purpose other than fulfilling transactions.
                 </p>
             </>
