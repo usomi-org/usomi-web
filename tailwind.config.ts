@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+import defaultTheme from "tailwindcss/defaultTheme";
 module.exports = {
+    purge: ["./components/**/*.{ts,js,tsx}", "./app/**/*.{ts,js,tsx,jsx}"],
     typescript: {
         ignoreBuildErrors: true
     },

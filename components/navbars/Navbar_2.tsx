@@ -11,7 +11,7 @@ export default function Navbar() {
                         <rect width="24" height="24" rx="6" fill="#016630" />
                         <path d="M8 7V14C8 16 10 17 12 17C14 17 16 16 16 14V7" stroke="#efb100" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                    <span className="font-bold text-lg text-green-600">Usomi</span>
+                    <span className="font-bold text-lg text-green-800">Usomi</span>
                 </Link>
 
 

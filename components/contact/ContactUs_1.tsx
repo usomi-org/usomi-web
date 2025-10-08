@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import MessagePopup from "@/components/cards/MessageCard";
+import Link from "next/link";
 
 export default function ContactUs_1() {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -30,7 +31,7 @@ export default function ContactUs_1() {
     };
 
     return (
-        <section id="contact" className="bg-yellow-50/30 py-8 px-6 shadow-md">
+        <section id="contact" className="bg-yellow-100/30 py-8 px-6 shadow-md">
             {/* Render as JSX and pass onClose to update parent state */}
             <MessagePopup
                 open={openMsg}
@@ -51,11 +52,20 @@ export default function ContactUs_1() {
                         we’d love to hear from you. Send us a message and we’ll respond as soon as we can.
                     </p>
 
-                    <div className="text-sm md:text-2xl space-y-3 text-green-800">
+                    <div className="text-sm md:text-1xl space-y-3 text-green-800">
                         <p><span className="font-semibold text-yellow-600">Email:</span> info@usomi.co.ke</p>
-                        <p><span className="font-semibold text-yellow-600">Phone:</span> +254 736 407985</p>
+                        <p><span className="font-semibold text-yellow-600">Phone:</span> Kenya: +254 736 407985</p>
+                        <p><span className="font-semibold text-yellow-600">Phone:</span> Uganda: +256 779 156815</p>
+                        <p><span className="font-semibold text-yellow-600">Phone:</span> Tanzania: +255 752 905156</p>
                         <p><span className="font-semibold text-yellow-600">Location:</span> Hardy Shopping Centre , Ushirika Road , Karen , P.O. Box 105086-00101 , Nairobi Kenya </p>
                     </div>
+
+                    <Link
+                    href="https://www.google.com/maps/place/Giraffe+Centre/@-10.7681942,-19.438072,3z/data=!4m14!1m7!3m6!1s0x182f05a9a4e927d3:0xe161fe0b53c6351f!2sGiraffe+Centre!8m2!3d-1.3763639!4d36.7443169!16zL20vMDltOTBq!3m5!1s0x182f05a9a4e927d3:0xe161fe0b53c6351f!8m2!3d-1.3763639!4d36.7443169!16zL20vMDltOTBq?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    >
+                        <button className="rounded-xl bg-yellow-500 text-white px-4 py-1 mt-5 border-2 shadow-md border-green-700">See Us From Google Maps</button>
+                    </Link>
                 </div>
 
                 {/* Right side - form */}

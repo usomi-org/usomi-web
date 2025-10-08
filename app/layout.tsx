@@ -5,7 +5,8 @@ import { JetBrains_Mono } from "next/font/google";
 import React from "react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/NavBar";
+import Navbar_2 from "@/components/navbars/Navbar_2";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,23 +32,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jetbrains.variable} bg-white text-gray-900`}>
-        <Navbar></Navbar>
-
+      <body className={`${jetbrains.variable} text-gray-900`}>
+        <Navbar_2 />
         <main className="mx-auto">{children}</main>
 
-        <footer className="border-t">
+        <footer className="border-t border-green-200 md:">
           <div className="max-w-7xl mx-auto px-4 py-6 text-sm text-center">
-            © Copyright {new Date().getFullYear()} Usomi Limited. All Rights
+              &copy; Copyright {new Date().getFullYear()} Usomi Limited. All Rights
             Reserved.
-            <Link className="text-yellow-500 underline" href="privacy/policy">
+            <Link className="text-yellow-500 underline" href="/privacy-policy">
               {" "}
               Privacy Policy
             </Link>
             |
             <Link
               className="text-yellow-500 underline"
-              href="terms/and/conditions/"
+              href="/terms-and-conditions"
             >
               {" "}
               Terms and conditions of Use{" "}
