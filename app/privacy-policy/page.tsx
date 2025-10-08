@@ -12,8 +12,8 @@ const SECTIONS: Section[] = [
         content: (
             <>
                 <p className="mb-2">
-                    We respect your privacy. This Privacy Policy explains how USOMI Limited ("USOMI", "we", "us") collects,
-                    uses, discloses and protects personal information when you use our website and Lulu® application.
+                    We respect your privacy. This Privacy Policy explains how USOMI Limited (&quot;USOMI&quot;, &quot;we&quot;, &quot;us&quot;) collects,
+                    uses, discloses and protects personal information when you use our website and Lulu&reg; application.
                 </p>
                 <p className="mb-2">
                     By accessing or using our services you accept this Privacy Policy. Please read it carefully.
@@ -189,7 +189,7 @@ export default function PrivacyPage() {
                         <div className="rounded-md bg-white border border-green-50 p-4 shadow-sm">
                             <h4 className="text-sm font-semibold text-green-800 mb-3">On this page</h4>
                             <ul className="text-sm space-y-2 list-decimal pl-4">
-                                {SECTIONS.map((s, idx) => (
+                                {SECTIONS.map((s) => (
                                     <li key={s.id}>
                                         <a href={`#${s.id}`} className="text-gray-700 hover:text-green-800 transition">
                                             {s.title}

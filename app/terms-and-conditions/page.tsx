@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 
 type Section = { id: string; title: string; content: React.ReactNode };
 
@@ -12,14 +11,14 @@ const SECTIONS: Section[] = [
         content: (
             <>
                 <p className="mb-3">
-                    Welcome to <strong>www.usomi.com</strong>. These terms and conditions (“Terms and Conditions”)
+                    Welcome to <strong>www.usomi.com</strong>. These terms and conditions (&quot;Terms and Conditions&quot;)
                     describe the terms governing your use of the LULU Application and USOMI website including content,
-                    updates and new releases (collectively, the “Software”) offered by USOMI LIMITED.
+                    updates and new releases (collectively, the &quot;Software&quot;) offered by USOMI LIMITED.
                 </p>
 
                 <p className="mb-3">
                     The Terms include, by reference, the USOMI LIMITED Privacy Statement and any additional third-party
-                    terms that may apply. Review these Terms before using the Software. Clicking “I Agree” or installing
+                    terms that may apply. Review these Terms before using the Software. Clicking &quot;I Agree&quot; or installing
                     the Software indicates acceptance of these Terms. If you do not agree, do not use the Software.
                 </p>
             </>
@@ -39,13 +38,13 @@ const SECTIONS: Section[] = [
                 <ol className="list-decimal pl-6 text-sm space-y-2">
                     <li>Be responsible for maintaining confidentiality of your account and password and for all activity under your account.</li>
                     <li>Notify USOMI LIMITED immediately of any unauthorized use or security breach.</li>
-                    <li>Not use another person's account without express permission.</li>
+                    <li>Not use another person&apos;s account without express permission.</li>
                     <li>Reimburse USOMI LIMITED for any improper or unauthorized use of your account.</li>
                     <li>Provide true, accurate, current and complete Registration Data and promptly update it as necessary.</li>
                 </ol>
 
                 <p className="mt-3 text-sm">
-                    Additional points: usernames cannot include the word "USOMI"; USOMI may suspend or withdraw access for inaccurate information;
+                    Additional points: usernames cannot include the word &quot;USOMI&quot;; USOMI may suspend or withdraw access for inaccurate information;
                     USOMI may verify identity and request documents when necessary.
                 </p>
             </>
@@ -93,7 +92,7 @@ const SECTIONS: Section[] = [
         content: (
             <>
                 <p className="mb-2">
-                    Anything you submit to the Site (comments, reviews, suggestions — “Submissions”) becomes USOMI LIMITED's
+                    Anything you submit to the Site (comments, reviews, suggestions — &quot;Submissions&quot;) becomes USOMI LIMITED&apos;s
                     sole and exclusive property. By posting materials you grant USOMI the right to use your name in connection
                     with such content. USOMI is not obliged to remove or edit Submissions.
                 </p>
@@ -285,7 +284,7 @@ export default function TermsPage() {
                         <div className="rounded-md bg-white border border-green-50 p-4 shadow-sm">
                             <h4 className="text-sm font-semibold text-green-800 mb-3">On this page</h4>
                             <ol className="text-sm space-y-2 list-decimal pl-4">
-                                {SECTIONS.map((s, idx) => (
+                                {SECTIONS.map((s) => (
                                     <ul key={s.id}>
                                         <a
                                             href={`#${s.id}`}
@@ -310,7 +309,7 @@ export default function TermsPage() {
 
                     {/* Main terms list */}
                     <article className="flex-1">
-                        {SECTIONS.map((s, idx) => (
+                        {SECTIONS.map((s) => (
                             <section id={s.id} key={s.id} className="mb-10">
                                 <div className="flex items-center justify-between">
                                     <h2 className="text-lg md:text-2xl font-semibold text-green-800">

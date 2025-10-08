@@ -22,7 +22,7 @@ const livestockSections = [
         content: (
             <p>
                 This service allows distinguishing between closely related species, strains, or
-                ecotypes. It's critical for maintaining breed quality and authenticity.
+                ecotypes. It&apos;s critical for maintaining breed quality and authenticity.
             </p>
         ),
     },

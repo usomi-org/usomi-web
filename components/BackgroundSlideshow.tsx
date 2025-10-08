@@ -4,7 +4,6 @@ import ImageComponent from "@/components/ImageComponent";
 import { useEffect, useState } from "react";
 import { StockImages } from "@/lib/images";
 import { shuffleArray } from "@/lib/algorithms";
-import {motion} from 'framer-motion';
 
 // Background Slideshow Component
 export default function BackgroundSlideshow() {

@@ -1,17 +1,9 @@
-// app/layout.tsx
 import "./globals.css";
 import Link from "next/link";
 import { JetBrains_Mono } from "next/font/google";
 import React from "react";
 import { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Navbar_2 from "@/components/navbars/Navbar_2";
-
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 
 export const metadata: Metadata = {
   title: "Usomi",

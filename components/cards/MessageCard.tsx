@@ -1,4 +1,3 @@
-// components/MessagePopup.tsx
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -78,7 +77,7 @@ export default function MessagePopup({
             document.removeEventListener("mousedown", onDocClick);
             document.removeEventListener("keydown", onKey);
         };
-    }, [isOpen]);
+    }, [isOpen,handleClose]);
 
     // focus close button when opened for accessibility
     useEffect(() => {

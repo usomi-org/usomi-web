@@ -41,16 +41,16 @@ export default function NavBar_1() {
 
     const isActive = (section: string) => activeSection === section;
 
-    const menuItems = [
-        { name: "About", href: "#about" },
-        { name: "Our Work", href: "#our-work", dropdown: [
-                { name: "Data Collection and Analytics", href: "/rubi" },
-                { name: "UsomiLulu", href: "/lulu" },
-                { name: "Genetic Testing", href: "/genomics" },
-                { name: "Kuku Nyumbani initiative", href: "/kuku-nyumbani-initiatives" }
-            ]},
-        { name: "Contact Us", href: "#contact" }
-    ];
+    // const menuItems = [
+    //     { name: "About", href: "#about" },
+    //     { name: "Our Work", href: "#our-work", dropdown: [
+    //             { name: "Data Collection and Analytics", href: "/rubi" },
+    //             { name: "UsomiLulu", href: "/lulu" },
+    //             { name: "Genetic Testing", href: "/genomics" },
+    //             { name: "Kuku Nyumbani initiative", href: "/kuku-nyumbani-initiatives" }
+    //         ]},
+    //     { name: "Contact Us", href: "#contact" }
+    // ];
 
     return (
         <Navbar
