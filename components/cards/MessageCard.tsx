@@ -57,7 +57,7 @@ export default function MessagePopup({
     const handleClose = useCallback(() => {
         setIsOpen(false);
         if (onClose) onClose();
-    },[]);
+    },[onClose]);
 
     // close on outside click and Esc
     useEffect(() => {

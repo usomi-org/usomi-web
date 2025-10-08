@@ -211,7 +211,7 @@ const SECTIONS: Section[] = [
             <>
                 <p className="mb-2">
                     Sellers are encouraged to leave feedback after transactions. Contact information shared is taken from users&apos;
-                    registration data; do not use another user's details for any purpose other than fulfilling transactions.
+                    registration data; do not use another user&apos;s details for any purpose other than fulfilling transactions.
                 </p>
             </>
         ),
