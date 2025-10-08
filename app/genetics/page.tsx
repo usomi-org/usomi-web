@@ -135,14 +135,14 @@ export default function GeneticsPage() {
                     Contact us for bacterial, viral, and fungal diagnostics in vegetables and ornamental crops.
                 </p>
 
-                <Image
-                    src={HERO_IMAGE}
-                    alt="Genetics hero"
-                    className="rounded-xl flex justify-center object-cover"
-                    priority
-                    width={500}
-                    height={400}
-                />
+                {/*<Image*/}
+                {/*    src={HERO_IMAGE}*/}
+                {/*    alt="Genetics hero"*/}
+                {/*    className="rounded-xl flex justify-center object-cover"*/}
+                {/*    priority*/}
+                {/*    width={500}*/}
+                {/*    height={400}*/}
+                {/*/>*/}
             </section>
 
             {/* Livestock Genetics Section */}

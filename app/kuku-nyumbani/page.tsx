@@ -114,8 +114,7 @@ export default function KukuNyumbaniPage() {
                                 </div>
 
                                 <Link
-                                    href="/"
-                                    target="_blank"
+                                    href="/motherunit"
                                     >
                                 <h5 className="hover:bg-green-500 font-semibold text-black border-0 rounded-full p-2 border-green-200 bg-green-600">Buy Kienyeji Chicken</h5>
                                 </Link>

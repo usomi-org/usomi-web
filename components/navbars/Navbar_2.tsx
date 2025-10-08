@@ -78,6 +78,12 @@ export default function Navbar() {
                                 >
                                     Kuku Nyumbani
                                 </Link>
+
+                                <Link href="/motherunit"
+                                      className="block px-4 py-3 hover:bg-yellow-50 text-green-800 transition"
+                                >
+                                    Motherunit
+                                </Link>
                             </div>
                         )}
                     </div>
