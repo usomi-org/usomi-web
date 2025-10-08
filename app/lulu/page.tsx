@@ -86,7 +86,7 @@ export default function LuluPage() {
     const [active, setActive] = useState<BenefitKey>("Producers");
 
     return (
-        <div className="min-h-screen bg-white mt-20 text-gray-900">
+        <div className="min-h-screen bg-white mt-10 text-gray-900">
             {/* HERO */}
             <header className="relative">
                 <div className="h-64 md:h-[420px] w-full relative overflow-hidden bg-black">
@@ -111,7 +111,7 @@ export default function LuluPage() {
                                 {/*<Link href="#" className="inline-block bg-yellow-400 text-green-900 px-4 py-2 rounded-full font-semibold">*/}
                                 {/*    Get it on Google Play*/}
                                 {/*</Link>*/}
-                                <Link href="#components" className="inline-block bg-white/20 text-white px-4 py-2 rounded-full border border-white/30">
+                                <Link href="/#components" className="hover:bg-yellow-50/30 inline-block bg-white/20 text-white px-4 py-2 rounded-full border border-white/30">
                                     Learn more
                                 </Link>
                             </div>
@@ -151,7 +151,7 @@ export default function LuluPage() {
                 transition={{ duration: 0.5 }} // Animation duration
             >
             {/* BENEFITS - columns that act like table headers */}
-            <section className="py-10 md:py-16 bg-black text-white">
+            <section className="py-10 md:py-16 bg-black text-white rounded-xl mb-20">
                 <div className="max-w-6xl mx-auto px-6">
                     <h3 className="text-2xl text-center font-semibold">Benefits of Lulu &reg;</h3>
                     <div className="mx-auto h-1 w-20 bg-green-200 my-4 rounded" />
@@ -162,7 +162,7 @@ export default function LuluPage() {
                             <button
                                 key={k}
                                 onClick={() => setActive(k)}
-                                className={`py-6 px-3 text-center rounded-t-lg transition ${
+                                className={`py-6 px-3 text-center rounded-t-lg transition hover:cursor-pointer ${
                                     active === k
                                         ? "bg-white text-green-900 font-semibold shadow-inner"
                                         : "bg-white/5 text-white/80 hover:bg-white/10"

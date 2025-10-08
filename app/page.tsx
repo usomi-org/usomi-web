@@ -8,7 +8,7 @@ import ContactUs_1 from "@/components/contact/ContactUs_1";
 
 export default function HomePage() {
     return (
-        <div className="min-h-screen bg-white text-gray-900">
+        <div className="min-h-screen bg-white text-gray-900 max-w-screen-xl mt-4">
 
             <section className="relative w-full">
                 <motion.div

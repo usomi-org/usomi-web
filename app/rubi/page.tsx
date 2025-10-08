@@ -12,7 +12,7 @@ export default function RubiPage() {
                 {/* Replace with your own hero image */}
                 <div className="absolute inset-0 opacity-20">
                     <Image
-                        src="/images/rubi-hero.jpg" // <-- your image path here
+                        src="/data-collection_1.jpg" // <-- your image path here
                         alt="Rubi Hero"
                         fill
                         className="object-cover"
@@ -36,25 +36,25 @@ export default function RubiPage() {
                     <div className="mt-8 flex justify-center gap-4">
                         <Link
                             href="/#contact"
-                            className="bg-yellow-400 text-green-900 font-semibold px-5 py-2 rounded-full"
+                            className="bg-yellow-400 hover:bg-yellow-50 text-green-900 font-semibold px-5 py-2 rounded-full"
                         >
                             Try Rubi Today
                         </Link>
                         <Link
                             href="#services"
-                            className="border border-yellow-300 text-yellow-300 font-semibold px-5 py-2 rounded-full"
+                            className="border border-yellow-300 hover:bg-yellow-50/20 text-yellow-300 font-semibold px-5 py-2 rounded-full"
                         >
                             Learn More
                         </Link>
                     </div>
 
-                    <p className="mt-5 text-sm italic text-gray-300">
-                        *Available on Web, Android & USSD
+                    <p className="font-bold mt-5 text-sm italic text-gray-300">
+                        Available on Web, Android & USSD
                     </p>
                 </div>
 
                 {/* angled divider */}
-                <div className="absolute bottom-0 left-0 w-full h-16 bg-white rotate-[-2deg] origin-bottom-left" />
+                <div className="absolute bottom-0 left-0 w-full h-16 bg-green-100 blur-xl rotate-[-2deg] origin-bottom-left" />
             </section>
 
             {/* INTRO */}
@@ -67,22 +67,16 @@ export default function RubiPage() {
                     </p>
                 </div>
 
-                {/*/!* optional image placeholder *!/*/}
-                {/*<div className="mt-10 bg-green-50 border border-green-200 rounded-2xl h-60 md:h-72 flex items-center justify-center">*/}
-                {/*    <p className="text-green-800 font-medium">*/}
-                {/*        [ Insert Rubi marketplace image here ]*/}
-                {/*    </p>*/}
-                {/*</div>*/}
             </section>
 
             {/* SERVICES */}
             <section
                 id="services"
-                className="bg-green-50 border-t border-green-100 mt-16 py-12 md:py-20"
+                className="bg-yellow-500 border-t rounded-xl border-green-100 mt-16 py-12 md:py-20"
             >
                 <div className="max-w-5xl mx-auto px-6 md:px-10">
                     <h2 className="text-2xl md:text-3xl font-bold text-green-900 text-center mb-10">
-                        Services Offered By Rubi®
+                        Services Offered By Rubi&reg;
                     </h2>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -130,12 +124,12 @@ export default function RubiPage() {
             </section>
 
             {/* CTA */}
-            <section className="bg-black text-center text-white py-14">
+            <section className="bg-black text-center text-white py-14 rounded-xl">
                 <h2 className="text-2xl md:text-3xl font-bold text-yellow-400 mb-3">
                     Become a Smart Aggregator
                 </h2>
                 <p className="text-gray-300 max-w-3xl mx-auto mb-6">
-                    Join Rubi® today and empower farmers across the region while earning through
+                    Join Rubi&reg; today and empower farmers across the region while earning through
                     modern digital agriculture.
                 </p>
                 <Link

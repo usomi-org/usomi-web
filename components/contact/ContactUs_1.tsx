@@ -64,7 +64,7 @@ export default function ContactUs_1() {
                     href="https://www.google.com/maps/place/Giraffe+Centre/@-10.7681942,-19.438072,3z/data=!4m14!1m7!3m6!1s0x182f05a9a4e927d3:0xe161fe0b53c6351f!2sGiraffe+Centre!8m2!3d-1.3763639!4d36.7443169!16zL20vMDltOTBq!3m5!1s0x182f05a9a4e927d3:0xe161fe0b53c6351f!8m2!3d-1.3763639!4d36.7443169!16zL20vMDltOTBq?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     >
-                        <button className="rounded-xl bg-yellow-500 text-white px-4 py-1 mt-5 border-2 shadow-md border-green-700">See Us From Google Maps</button>
+                        <button className="hover:cursor-pointer rounded-xl bg-yellow-500 text-white px-4 py-1 mt-5 border-2 shadow-md border-green-700">See Us From Google Maps</button>
                     </Link>
                 </div>
 
@@ -120,7 +120,7 @@ export default function ContactUs_1() {
 
                         <button
                             type="submit"
-                            className="text-sm md:w-40 w-30 bg-green-800 text-white py-2 rounded-full hover:bg-green-900 transition-all"
+                            className="hover:cursor-pointer text-sm md:w-40 w-30 bg-green-800 text-white py-2 rounded-full hover:bg-green-900 transition-all"
                         >
                             Send Message
                         </button>
