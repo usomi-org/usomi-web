@@ -1,92 +1,73 @@
 "use client";
 
-// import { RightSide } from "@/components/RightSide";
-// import { LeftSide } from "@/components/LeftSide";
-import { RightSide1 } from "@/components/RightSide";
-import { LeftSide1 } from "@/components/LeftSide";
-import Initiatives from "@/components/Initiatives";
+import BackgroundSlideshow from "@/components/BackgroundSlideshow";
+import Initiatives_2 from "@/components/Initiatives";
 import About from "@/components/About";
-import ContactSection from "@/components/ContactSection";
-// import {Poppins, Lato, JetBrains_Mono} from "next/font/google";
-// const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
-// const lato = Lato({ subsets: ["latin"], weight: ["400"] });
-// const jetbrains = JetBrains_Mono({subsets: ["latin"],variable: "--font-jetbrains",});
-// relative  flex h-screen lg:h-screen overflow-hidden lg:flex-row
-// export default function HomePage() {
-//     return (
-//         <div className="flex flex-col">
-//             {/*<section className="relative md:h-screen h-screen lg:flex-row lg:w-1/2 ">*/}
-//             {/*    /!*<div className="flex flex-col lg:flex-row">*!/*/}
-//             {/*        <LeftSide1/>*/}
-//             {/*        <RightSide1/>*/}
-//             {/*    /!*</div>*!/*/}
-//             {/*</section>*/}
-//             <section className="flex flex-col lg:flex-row h-screen">
-//                 <div className="lg:w-1/2">
-//                     <LeftSide1 />
-//                 </div>
-//                 <div className="lg:w-1/2 mt-6 lg:mt-0">
-//                     <RightSide1 />
-//                 </div>
-//             </section>
-//             {/* Initiatives */}
-//             <section className="h-screen">
-//                 <Initiatives/>
-//             </section>
-//
-//             {/* About */}
-//             {/*<section className="h-screen">*/}
-//                 <About/>
-//             {/*</section>*/}
-//             {/* Contact */}
-//             <ContactSection/>
-//         </div>
-//     );
-// }
-// export default function HomePage() {
-//   return (
-//     <div className="flex flex-col">
-//       {/* Hero Section - Fixed for mobile/desktop responsiveness */}
-//       <section className="relative flex flex-col lg:flex-row min-h-screen lg:h-screen overflow-hidden">
-//         <LeftSide1 />
-//         <RightSide1 />
-//       </section>
-//
-//       {/* Initiatives */}
-//       <Initiatives />
-//       {/* About */}
-//       <About />
-//       {/* Contact */}
-//       <ContactSection />
-//     </div>
-//   );
-// }
+import {motion} from "framer-motion";
+import ContactUs_1 from "@/components/contact/ContactUs_1";
 
 export default function HomePage() {
     return (
-        <div className="flex flex-col">
-            {/* Hero Section */}
-            <section className="flex flex-col lg:flex-row h-auto lg:h-screen">
-                {/* Left Side: Always Visible */}
-                <div className="lg:w-1/2 flex">
-                    <LeftSide1 />
-                </div>
+        <div className="min-h-screen bg-white text-gray-900 max-w-screen-xl mt-4">
 
-                {/* Right Side: Hidden on Mobile */}
-                <div className="hidden lg:flex lg:w-1/2">
-                    <RightSide1 />
+            <section className="relative w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: -20 }} // Initial state
+                    animate={{ opacity: 1, y: 0 }}   // Animation target state
+                    transition={{ duration: 0.5 }} // Animation duration
+                >
+                <div
+                    className="text-center max-w-6xl mx-auto px-6 md:px-12 pt-16"
+                    style={{ minHeight: "30vh" }}
+                >
+                    <div className="pt-1 md:pt-6 relative z-30">
+
+                        <div className="border w-12 md:w-24 border-green-200"/>
+
+                        <h1 className="text-2xl md:text-6xl font-extrabold leading-tight text-black">
+                            Putting AgResearch Into Practice
+                        </h1>
+
+                        <p className="text-1xl md:text-lg mt-5 text-gray-600 ">
+                            Empowering farmers with innovative technology to increase
+                            productivity, optimize resources, and achieve better yields.
+                        </p>
+
+                    </div>
                 </div>
+                </motion.div>
+
+
+                <motion.div>
+                <div
+                    className="absolute left-0 right-0 mb-20"
+                    style={{ top: "40vh", height: "100vh"}}
+                >
+                    {/* container centers content and controls max width */}
+                    <div className="max-w-1xl mx-auto px-3 h-full">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl h-full">
+                            {/* Slideshow itself (fills the rounded container) */}
+
+                            <div className="absolute inset-0 z-10">
+                                <BackgroundSlideshow />
+                            </div>
+
+                            {/* Overlay content on top of slideshow */}
+                            <div className="absolute inset-0 z-20 pointer-events-none">
+                                    <About />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </motion.div>
             </section>
 
-            {/* Initiatives Section */}
-            <Initiatives />
-
-            {/* About Section */}
-            <About />
-
-            {/* Contact Section */}
-            <ContactSection />
+            {/* make page content start below the slideshow by adding top padding equal to slideshow bottom */}
+            <main className="relative" style={{ paddingTop: "100vh" }}>
+                <Initiatives_2/>
+                <ContactUs_1 />
+            </main>
         </div>
     );
 }
-

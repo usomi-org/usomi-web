@@ -10,8 +10,14 @@
     "prepare": "husky && husky install"
   },
   "dependencies": {
+    "@heroui/button": "^2.2.26",
+    "@heroui/navbar": "^2.2.24",
+    "@heroui/react": "^2.8.4",
     "@radix-ui/react-navigation-menu": "^1.2.14",
-    "next": "15.5.2",
+    "email-validator": "^2.0.4",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.545.0",
+    "next": "15.5.9",
     "pnpm": "^10.14.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -32,5 +38,6 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
-  }
+  },
+  "packageManager": "pnpm@10.18.0+sha512.e804f889f1cecc40d572db084eec3e4881739f8dec69c0ff10d2d1beff9a4e309383ba27b5b750059d7f4c149535b6cd0d2cb1ed3aeb739239a4284a68f40cfa"
 }
